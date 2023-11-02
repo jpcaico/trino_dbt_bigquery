@@ -2,6 +2,7 @@
     on_table_exists='drop'
 ) }}
 
+
 SELECT
   product_id,
   SUM(amount) as total_sales
