@@ -1,0 +1,27 @@
+version: '3.7'
+services:
+    sales:
+        image: postgres:11
+        container_name: sales
+        restart: always
+        environment:
+            POSTGRES_DB: postgres
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: postgres
+        ports:
+            - "15432:5432"
+        volumes:
+            - ./postgres-data:/var/lib/postgresql/data
+            - ./sql/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
+            - ./sql/fill_tables.sql:/docker-entrypoint-initdb.d/fill_tables.sql
+    trino:
+        hostname: trino
+        container_name: trino
+        image: 'trinodb/trino:latest'
+        ports:
+            - '8080:8080'
+        volumes:
+            - ./catalog:/etc/trino/catalog
+networks:
+    trino-network:
+        driver: bridge

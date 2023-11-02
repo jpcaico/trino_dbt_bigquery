@@ -1,0 +1,8 @@
+sources:
+  - name: sales
+    database: dbt-sales
+    schema: ingestion
+    tables:
+      - name: order_status
+      - name: sale
+      

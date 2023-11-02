@@ -1,0 +1,72 @@
+[0m13:38:31.709765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1148bec50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1148cb710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1148cbd10>]}
+
+
+============================== 13:38:31.712247 | 8af6cac5-9c46-42d0-8a19-f10a124bc54c ==============================
+[0m13:38:31.712247 [info ] [MainThread]: Running with dbt=1.6.6
+[0m13:38:31.712551 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/jpalvim/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:38:31.712825 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/Users/jpalvim/.dbt')}
+[0m13:38:31.712985 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m13:39:01.049673 [debug] [MainThread]: Starter project path: /opt/homebrew/lib/python3.11/site-packages/dbt/include/starter_project
+[0m13:39:01.058738 [info ] [MainThread]: 
+Your new dbt project "sales_etl" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:39:01.059285 [info ] [MainThread]: Setting up your profile.
+[0m13:39:02.977413 [info ] [MainThread]: Profile sales_etl written to /Users/jpalvim/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m13:39:02.977844 [debug] [MainThread]: Command `dbt init` succeeded at 13:39:02.977774 after 31.28 seconds
+[0m13:39:02.978055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ec3b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1148b3c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104dde150>]}
+[0m13:39:02.978285 [debug] [MainThread]: Flushing usage events
+[0m15:09:00.341553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e1b0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e465d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e46c10>]}
+
+
+============================== 15:09:00.344062 | 248b1d09-368e-4e28-85e5-9ec1d25abe4b ==============================
+[0m15:09:00.344062 [info ] [MainThread]: Running with dbt=1.6.6
+[0m15:09:00.344347 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/jpalvim/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:09:00.344614 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/jpalvim/Desktop/github/trino_dbt_bigquery/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:09:00.344928 [debug] [MainThread]: Command `dbt run` failed at 15:09:00.344874 after 0.01 seconds
+[0m15:09:00.345092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e25e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1008c3610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e1a3d0>]}
+[0m15:09:00.345239 [debug] [MainThread]: Flushing usage events
+[0m19:08:36.988505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e3ccd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e4fc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e59390>]}
+
+
+============================== 19:08:36.991052 | 6e67847a-b4d7-42d4-bb93-aa4c1042c38c ==============================
+[0m19:08:36.991052 [info ] [MainThread]: Running with dbt=1.6.6
+[0m19:08:36.991332 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/jpalvim/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt init', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:08:46.979815 [debug] [MainThread]: Starter project path: /opt/homebrew/lib/python3.11/site-packages/dbt/include/starter_project
+[0m19:08:46.993114 [info ] [MainThread]: 
+Your new dbt project "sales_etl_bigquery" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:08:46.993848 [info ] [MainThread]: Setting up your profile.
+[0m19:09:59.340499 [info ] [MainThread]: Profile sales_etl_bigquery written to /Users/jpalvim/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m19:09:59.342665 [debug] [MainThread]: Command `dbt init` succeeded at 19:09:59.342388 after 82.36 seconds
+[0m19:09:59.343343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e59290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e39c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10985e0d0>]}
+[0m19:09:59.344128 [debug] [MainThread]: Flushing usage events

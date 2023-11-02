@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: sales
+    database: postgres
+    schema: public
+    tables:
+      - name: order_status
+      - name: sale
+      
