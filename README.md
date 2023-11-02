@@ -1,4 +1,4 @@
-# Using trino-dbt as a data ingestion tool
+# Using dbt-trino as a data ingestion tool
 This repo tries to ingest data to bigquery using `dbt-trino`. Data is captured from a `postgresql` database with incremental loading strategy and loaded into bigquery.
 
 After that, you can proceed with the ETL using the same `trino` connector for dbt or use a different `bigquery` connector. Trino has some limitations such as not being able to create views. 
