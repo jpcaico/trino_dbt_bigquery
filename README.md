@@ -1,4 +1,25 @@
-# trino_dbt_bigquery
+# Using trino-dbt as a data ingestion tool
+This repo tries to ingest data to bigquery using `dbt-trino`. Data is captured from a `postgresql` database with incremental loading strategy and loaded into bigquery.
+
+After that, you can proceed with the ETL using the same `trino` connector for dbt or use a different `bigquery` connector. Trino has some limitations such as not being able to create views. 
+
+:point_down: :point_down: :point_down: :point_down: :point_down:
+> I wrote a complete explanation blog post on Medium. Click [here]() for accessing.
+
+:point_up: :point_up: :point_up: :point_up: :point_up:
+### Configuring Trino and Postgres
+
+1. Inside `docker/catalog` create your `.properties` files. For this example we are connecting to `postgresql` and `bigquery`
+
+2. Run `docker-compose up -d` to start local `postgres` and `trino`. Postgresql is populated with scripts in `sql` folder.
+
+3. For more details on trino config access [here](https://docs.starburst.io/blog_dbt/2022-11-30-dbt1-trino-setup.html).
+
+4. For more details on postgres config and code access [here] (https://levelup.gitconnected.com/creating-and-filling-a-postgres-db-with-docker-compose-e1607f6f882f)
+
+### Configuring dbt
+
+1. After initiating the project, make sure:
 
 
 `psql -h localhost -U postgres -d postgres -p 15432`
