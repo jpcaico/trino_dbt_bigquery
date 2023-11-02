@@ -5,6 +5,8 @@ After that, you can proceed with the ETL using the same `trino` connector for db
 
 :point_down: :point_down: :point_down: :point_down: :point_down:
 > I wrote a complete explanation and **step by step** blog post on Medium. Click [here]() for accessing.
+
+
 :point_up: :point_up: :point_up: :point_up: :point_up:
 
 
@@ -62,4 +64,6 @@ VALUES
 
 :point_down: :point_down: :point_down: :point_down: :point_down:
 > I wrote a complete explanation and **step by step** blog post on Medium. Click [here]() for accessing.
+
+
 :point_up: :point_up: :point_up: :point_up: :point_up:
